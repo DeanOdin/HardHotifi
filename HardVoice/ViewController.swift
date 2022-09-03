@@ -79,8 +79,10 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
     
     @IBAction func stop_1(_ sender: Any) {
     
+        /**
+         */
         // print(UIDevice.modelName)
-        sendEmail()
+        // sendEmail()
         
     }
     

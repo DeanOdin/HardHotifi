@@ -11,13 +11,13 @@ import AVKit
 import AVFAudio
 import AVFoundation
 import MessageUI
-
-
+import CloudKit
 
 class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
     
     var musicPlayer: AVPlayer!
     var a = 1
+    var i = 0
     
     
 
@@ -79,10 +79,14 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
     
     @IBAction func stop_1(_ sender: Any) {
     
-        /**
-         */
         // print(UIDevice.modelName)
-        // sendEmail()
+        tapped()
+        
+    }
+    
+    @IBAction func btSupport(_ sender: Any) {
+        
+        sendEmail()
         
     }
     
@@ -92,9 +96,7 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
         
     }
     
-    override func viewDidLoad() {
-      
-    }
+    
     
     /**
         Start strimer"voice
@@ -134,7 +136,113 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
             print("playing styped")
     
         }
+    
+    override func viewDidLoad() {
+            super.viewDidLoad()
+
+            let btn = UIButton()
+            btn.translatesAutoresizingMaskIntoConstraints = false
+            view.addSubview(btn)
+
+            btn.widthAnchor.constraint(equalToConstant: 128).isActive = true
+            btn.heightAnchor.constraint(equalToConstant: 128).isActive = true
+            btn.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+            btn.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+
+            btn.setTitle("Tap here!", for: .normal)
+            btn.setTitleColor(UIColor.red, for: .normal)
+            btn.addTarget(self, action: #selector(tapped), for: .touchUpInside)
+        }
+
+        @objc func tapped() {
+            i += 1
+            print("Running \(i)")
+
+            switch i {
+            case 1:
+                let generator = UINotificationFeedbackGenerator()
+                generator.notificationOccurred(.error)
+
+            case 2:
+                let generator = UINotificationFeedbackGenerator()
+                generator.notificationOccurred(.success)
+
+            case 3:
+                let generator = UINotificationFeedbackGenerator()
+                generator.notificationOccurred(.warning)
+
+            case 4:
+                let generator = UIImpactFeedbackGenerator(style: .light)
+                generator.impactOccurred()
+
+            case 5:
+                let generator = UIImpactFeedbackGenerator(style: .medium)
+                generator.impactOccurred()
+
+            case 6:
+                let generator = UIImpactFeedbackGenerator(style: .heavy)
+                generator.impactOccurred()
+
+            default:
+                let generator = UISelectionFeedbackGenerator()
+                generator.selectionChanged()
+                i = 0
+            }
+        }
+    
 
 }
+
+
+/*
+ 
+// habr.com/ru/company/youla/blog/456394/
+ // Создание анимированного экрана приветствия. Появление главного меню из иконки
+ 
+final class SplashViewController: UIViewController {
+    @IBOutlet weak var logoImageView: UIImageView!
+    @IBOutlet weak var textImageView: UIImageView!
+    
+    var textImage: UIImage?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        textImageView.image = textImage
+        
+    }
+    
+    
+}
+
+protocol SplashPresenterDescription: AnyObject {
+    //class
+    
+    func present()
+    func dismiss(completion: @escaping () -> Void)
+}
+
+final class SplashPresenter: SplashPresenterDescription {
+     func present() {
+        // Пока оставим метод пустым
+     }
+     
+    func dismiss(completion: @escaping () -> Void) {
+        // Пока оставим метод пустым
+    }
+}
+
+private var textImage: UIImage? = {
+        let textsCount = 17
+        
+        let imageNumber = Int.random(in: 1...textsCount)
+        let imageName = "preview\(imageNumber)"
+        
+        return UIImage(named: imageName)
+    }()
+
+@MainActor class UIWindow : UIView {
+    
+}
+ */
     
 

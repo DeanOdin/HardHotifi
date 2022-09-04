@@ -8,24 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		6C0921CB28BA4349001639D8 /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0921CA28BA4349001639D8 /* UIDevice.swift */; };
+		6C31534F28C3CAF1006B9F2B /* 10943.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6C31534E28C3CAF1006B9F2B /* 10943.otf */; };
+		6C7AA74128C3F72E0099F076 /* AutoChangeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7AA74028C3F72E0099F076 /* AutoChangeScreen.swift */; };
 		6C7CF89827837749003AA14B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7CF89727837749003AA14B /* AppDelegate.swift */; };
 		6C7CF89A27837749003AA14B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7CF89927837749003AA14B /* SceneDelegate.swift */; };
 		6C7CF89C27837749003AA14B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7CF89B27837749003AA14B /* ViewController.swift */; };
 		6C7CF89F27837749003AA14B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C7CF89D27837749003AA14B /* Main.storyboard */; };
 		6C7CF8A12783774B003AA14B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C7CF8A02783774B003AA14B /* Assets.xcassets */; };
-		6C7CF8A42783774B003AA14B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C7CF8A22783774B003AA14B /* LaunchScreen.storyboard */; };
 		6C855D9228A7A4D300935002 /* Audio.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6C855D9128A7A4D300935002 /* Audio.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6C0921CA28BA4349001639D8 /* UIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
+		6C31534E28C3CAF1006B9F2B /* 10943.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 10943.otf; sourceTree = "<group>"; };
+		6C7AA74028C3F72E0099F076 /* AutoChangeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoChangeScreen.swift; sourceTree = "<group>"; };
 		6C7CF89427837749003AA14B /* HardVoice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HardVoice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C7CF89727837749003AA14B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C7CF89927837749003AA14B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6C7CF89B27837749003AA14B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6C7CF89E27837749003AA14B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6C7CF8A02783774B003AA14B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6C7CF8A32783774B003AA14B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C7CF8A52783774B003AA14B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C855D9128A7A4D300935002 /* Audio.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Audio.bundle; path = HardVoice/Audio.bundle; sourceTree = "<group>"; };
 		6C855D9328A7C73600935002 /* HardVoice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HardVoice.entitlements; sourceTree = "<group>"; };
@@ -50,9 +52,18 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		6C31534928C3C442006B9F2B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6C31534E28C3CAF1006B9F2B /* 10943.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		6C7CF88B27837749003AA14B = {
 			isa = PBXGroup;
 			children = (
+				6C31534928C3C442006B9F2B /* Fonts */,
 				6C0921C928BA431A001639D8 /* Utils */,
 				6C855D9128A7A4D300935002 /* Audio.bundle */,
 				6C7CF89627837749003AA14B /* HardVoice */,
@@ -72,12 +83,12 @@
 			isa = PBXGroup;
 			children = (
 				6C855D9328A7C73600935002 /* HardVoice.entitlements */,
+				6C7AA74028C3F72E0099F076 /* AutoChangeScreen.swift */,
 				6C7CF89727837749003AA14B /* AppDelegate.swift */,
 				6C7CF89927837749003AA14B /* SceneDelegate.swift */,
 				6C7CF89B27837749003AA14B /* ViewController.swift */,
 				6C7CF89D27837749003AA14B /* Main.storyboard */,
 				6C7CF8A02783774B003AA14B /* Assets.xcassets */,
-				6C7CF8A22783774B003AA14B /* LaunchScreen.storyboard */,
 				6C7CF8A52783774B003AA14B /* Info.plist */,
 			);
 			path = HardVoice;
@@ -141,8 +152,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C7CF8A42783774B003AA14B /* LaunchScreen.storyboard in Resources */,
 				6C7CF8A12783774B003AA14B /* Assets.xcassets in Resources */,
+				6C31534F28C3CAF1006B9F2B /* 10943.otf in Resources */,
 				6C7CF89F27837749003AA14B /* Main.storyboard in Resources */,
 				6C855D9228A7A4D300935002 /* Audio.bundle in Resources */,
 			);
@@ -155,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C7AA74128C3F72E0099F076 /* AutoChangeScreen.swift in Sources */,
 				6C7CF89C27837749003AA14B /* ViewController.swift in Sources */,
 				6C7CF89827837749003AA14B /* AppDelegate.swift in Sources */,
 				6C7CF89A27837749003AA14B /* SceneDelegate.swift in Sources */,
@@ -171,14 +183,6 @@
 				6C7CF89E27837749003AA14B /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		6C7CF8A22783774B003AA14B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6C7CF8A32783774B003AA14B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

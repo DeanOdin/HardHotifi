@@ -12,6 +12,7 @@ import AVFAudio
 import AVFoundation
 import MessageUI
 import CloudKit
+import SwiftUI
 
 class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
     
@@ -19,8 +20,10 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
     var a = 1
     var i = 0
     
-    
 
+        
+    
+    
     // ReportSender
     func sendEmail() {
         if MFMailComposeViewController.canSendMail() {
@@ -83,18 +86,27 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
         tapped()
         
     }
-    
     @IBAction func btSupport(_ sender: Any) {
         
+        tapped()
         sendEmail()
-        
+    
     }
+    
     
     @IBAction func save_1(_ sender: Any) {
         
-        saveVoiceToDir(fileName: "dadova", fileExt: "m4a")
+       // saveVoiceToDir(fileName: "dadova", fileExt: "m4a")
+       
         
     }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        switch segue.identifier {
+//        case "sgHelpScreen":
+//            segue.destination.help
+//        }
+//    }
     
     
     
@@ -136,7 +148,8 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
             print("playing styped")
     
         }
-    
+  
+    /*
     override func viewDidLoad() {
             super.viewDidLoad()
 
@@ -153,6 +166,7 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
             btn.setTitleColor(UIColor.red, for: .normal)
             btn.addTarget(self, action: #selector(tapped), for: .touchUpInside)
         }
+     */
 
         @objc func tapped() {
             i += 1
@@ -190,8 +204,9 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
             }
         }
     
-
 }
+
+    
 
 
 /*

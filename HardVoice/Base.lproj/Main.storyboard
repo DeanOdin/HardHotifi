@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vqv-EW-qsQ">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -16,21 +16,20 @@
         <!--Auto Change Screen-->
         <scene sceneID="iq5-sI-NX3">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kP4-iy-Ytw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="Vqv-EW-qsQ" customClass="AutoChangeScreen" customModule="HardVoice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dBK-WI-rMx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="preview" translatesAutoresizingMaskIntoConstraints="NO" id="j9f-PJ-Vr6">
-                                <rect key="frame" x="107" y="348" width="200" height="200"/>
+                                <rect key="frame" x="107" y="268" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="J7u-ZN-nwE"/>
                                     <constraint firstAttribute="height" constant="200" id="dA9-XX-pbg"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="загрузка..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HoO-xe-tiW">
-                                <rect key="frame" x="107" y="748" width="200" height="200"/>
+                                <rect key="frame" x="107" y="668" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="Z9l-Dj-nWA"/>
                                     <constraint firstAttribute="height" constant="200" id="fTh-T3-zZH"/>
@@ -51,64 +50,29 @@
                     </view>
                     <navigationItem key="navigationItem" id="Oym-bT-rco"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="goToMainScreen" modalPresentationStyle="fullScreen" id="tCt-fa-8VF"/>
+                        <segue destination="NVj-v6-fVn" kind="presentation" identifier="goToMainScreen" modalPresentationStyle="fullScreen" id="Xi8-2k-AQl"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kP4-iy-Ytw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="437.68115942028987" y="-1724.3303571428571"/>
+            <point key="canvasLocation" x="506" y="-995"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="HardVoice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="28T-Sb-g0R">
-                                <rect key="frame" x="14" y="44" width="400" height="59"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPH-dG-FPb">
-                                        <rect key="frame" x="350" y="21" width="22" height="22"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" image="message" catalog="system">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="preview" translatesAutoresizingMaskIntoConstraints="NO" id="5CU-3E-Uxy">
+                                <rect key="frame" x="82" y="243" width="250" height="250"/>
+                            </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MPn-6a-9a7">
-                                <rect key="frame" x="14" y="116" width="384" height="395"/>
+                                <rect key="frame" x="15" y="101" width="384" height="395"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p81-6h-Nv2">
-                                        <rect key="frame" x="106" y="22" width="165" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <items>
-                                            <barButtonItem systemItem="pause" id="4ke-WB-klR">
-                                                <connections>
-                                                    <action selector="stop_1:" destination="BYZ-38-t0r" id="y1Q-if-dYT"/>
-                                                </connections>
-                                            </barButtonItem>
-                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="APB-ul-mzB"/>
-                                            <barButtonItem title="Save" id="68S-Es-2N2">
-                                                <connections>
-                                                    <action selector="save_1:" destination="BYZ-38-t0r" id="vsV-xt-ADd"/>
-                                                </connections>
-                                            </barButtonItem>
-                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="1sR-ot-lLj"/>
-                                            <barButtonItem systemItem="play" id="dBd-8x-Aif">
-                                                <connections>
-                                                    <action selector="play_1:" destination="BYZ-38-t0r" id="nBP-I6-rAK"/>
-                                                </connections>
-                                            </barButtonItem>
-                                        </items>
-                                    </toolbar>
-                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <viewLayoutGuide key="contentLayoutGuide" id="gQT-i3-3dh"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="WLK-IS-qQ4"/>
                             </scrollView>
@@ -116,23 +80,269 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="28T-Sb-g0R" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="120" id="A1e-fQ-wzo"/>
-                            <constraint firstItem="28T-Sb-g0R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jN3-zE-bUQ"/>
+                            <constraint firstItem="5CU-3E-Uxy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UHe-Dq-ztc"/>
+                            <constraint firstItem="5CU-3E-Uxy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aU5-Cj-eBZ"/>
+                            <constraint firstItem="5CU-3E-Uxy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gXN-df-jp6"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Biq-GL-dfw"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1237.68115942029" y="-994.41964285714278"/>
+            <point key="canvasLocation" x="1575" y="-285"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OZS-8m-rik">
+            <objects>
+                <viewController id="NVj-v6-fVn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2iQ-4s-MZT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cXF-3X-ruK">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nKL-bf-1dt">
+                                        <rect key="frame" x="0.0" y="-8" width="414" height="1200"/>
+                                        <subviews>
+                                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EqN-Yq-FE1">
+                                                <rect key="frame" x="23" y="116" width="368" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <items>
+                                                    <barButtonItem title="Дадова" style="plain" id="7Q0-gX-gT5">
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </barButtonItem>
+                                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="yC8-hS-4eH"/>
+                                                    <barButtonItem width="3" systemItem="flexibleSpace" id="1mK-DG-wTG"/>
+                                                    <barButtonItem image="play" catalog="system" id="xNY-CQ-8CG">
+                                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                                        <connections>
+                                                            <action selector="play_1:" destination="BYZ-38-t0r" id="VnV-z3-r0W"/>
+                                                        </connections>
+                                                    </barButtonItem>
+                                                    <barButtonItem image="ellipsis" catalog="system" id="aYi-W2-F0A">
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <connections>
+                                                            <action selector="save_1:" destination="BYZ-38-t0r" id="x4U-NE-4WB"/>
+                                                            <segue destination="zA9-3i-Fg6" kind="presentation" modalPresentationStyle="pageSheet" modalTransitionStyle="crossDissolve" id="2xY-D3-YFx"/>
+                                                        </connections>
+                                                    </barButtonItem>
+                                                </items>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </toolbar>
+                                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cQ2-n1-VGe">
+                                                <rect key="frame" x="23" y="160" width="368" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <items>
+                                                    <barButtonItem title="Салют" style="plain" id="caP-XV-eyM">
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </barButtonItem>
+                                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="9wb-D2-8YS"/>
+                                                    <barButtonItem width="3" systemItem="flexibleSpace" id="2mB-aI-VK5"/>
+                                                    <barButtonItem image="play" catalog="system" id="u48-VO-jP2">
+                                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                                        <connections>
+                                                            <action selector="play_1:" destination="BYZ-38-t0r" id="8sc-JO-K9B"/>
+                                                        </connections>
+                                                    </barButtonItem>
+                                                    <barButtonItem image="ellipsis" catalog="system" id="w6K-Ou-dIy">
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <connections>
+                                                            <action selector="save_1:" destination="BYZ-38-t0r" id="xB2-iS-mas"/>
+                                                        </connections>
+                                                    </barButtonItem>
+                                                </items>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </toolbar>
+                                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GyG-B1-nDJ">
+                                                <rect key="frame" x="23" y="204" width="368" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <items>
+                                                    <barButtonItem title="Никакого праздника" style="plain" id="fSF-aj-07E">
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </barButtonItem>
+                                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="up8-1z-zRb"/>
+                                                    <barButtonItem width="3" systemItem="flexibleSpace" id="JUn-fP-WFv"/>
+                                                    <barButtonItem image="play" catalog="system" id="XKr-F9-unA">
+                                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                                        <connections>
+                                                            <action selector="play_1:" destination="BYZ-38-t0r" id="Wd0-j6-yJO"/>
+                                                        </connections>
+                                                    </barButtonItem>
+                                                    <barButtonItem image="ellipsis" catalog="system" id="8ia-Qi-AkY">
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <connections>
+                                                            <action selector="save_1:" destination="BYZ-38-t0r" id="J4U-8Y-NEL"/>
+                                                        </connections>
+                                                    </barButtonItem>
+                                                </items>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </toolbar>
+                                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dli-kG-jMA">
+                                                <rect key="frame" x="23" y="248" width="368" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <items>
+                                                    <barButtonItem title="Помогите грабят" style="plain" id="2Sj-Kv-gbI">
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </barButtonItem>
+                                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="wZx-wC-sub"/>
+                                                    <barButtonItem width="3" systemItem="flexibleSpace" id="rlm-JT-qWi"/>
+                                                    <barButtonItem image="play" catalog="system" id="rNK-RM-lvQ">
+                                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                                        <connections>
+                                                            <action selector="play_1:" destination="BYZ-38-t0r" id="N18-je-VBZ"/>
+                                                        </connections>
+                                                    </barButtonItem>
+                                                    <barButtonItem image="ellipsis" catalog="system" id="anN-pe-fQh">
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <connections>
+                                                            <action selector="save_1:" destination="BYZ-38-t0r" id="1Gf-Jd-QXZ"/>
+                                                        </connections>
+                                                    </barButtonItem>
+                                                </items>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </toolbar>
+                                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AlU-ss-YH8">
+                                                <rect key="frame" x="23" y="292" width="368" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <items>
+                                                    <barButtonItem title="Ешь блюй и спать" style="plain" id="SgJ-gQ-Oae">
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </barButtonItem>
+                                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="hkT-5E-w5f"/>
+                                                    <barButtonItem width="3" systemItem="flexibleSpace" id="mDB-f3-0Am"/>
+                                                    <barButtonItem image="play" catalog="system" id="m3k-Bn-KwK">
+                                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                                        <connections>
+                                                            <action selector="play_1:" destination="BYZ-38-t0r" id="Njo-Mu-jCD"/>
+                                                        </connections>
+                                                    </barButtonItem>
+                                                    <barButtonItem image="ellipsis" catalog="system" id="vOR-os-NpN">
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <connections>
+                                                            <action selector="save_1:" destination="BYZ-38-t0r" id="GcP-Ld-QEL"/>
+                                                        </connections>
+                                                    </barButtonItem>
+                                                </items>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </toolbar>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1200" id="WZT-FK-ze8"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemFillColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="nKL-bf-1dt" secondAttribute="bottom" id="91S-JI-FaI"/>
+                                    <constraint firstItem="nKL-bf-1dt" firstAttribute="leading" secondItem="cXF-3X-ruK" secondAttribute="leading" id="PgJ-2f-A7g"/>
+                                    <constraint firstItem="nKL-bf-1dt" firstAttribute="top" secondItem="cXF-3X-ruK" secondAttribute="top" id="Z9m-jM-uR3"/>
+                                    <constraint firstItem="nKL-bf-1dt" firstAttribute="trailing" secondItem="cXF-3X-ruK" secondAttribute="trailing" id="Zgi-HE-R9q"/>
+                                </constraints>
+                            </scrollView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HSj-ve-seI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" id="fLn-UZ-ovM">
+                                        <rect key="frame" x="0.0" y="-12" width="414" height="117"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="nzL-5A-eT2">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="117"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="preview" translatesAutoresizingMaskIntoConstraints="NO" id="dBw-1S-Hhn">
+                                                    <rect key="frame" x="151" y="44" width="112" height="67"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ZH-y9-2KN">
+                                                    <rect key="frame" x="325" y="44" width="67" height="65"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="message" catalog="system">
+                                                        <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </buttonConfiguration>
+                                                    <connections>
+                                                        <action selector="btSupport:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4NZ-Wb-R3V"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94A-mN-NNe">
+                                                    <rect key="frame" x="259" y="44" width="66" height="65"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="message.fill" catalog="system">
+                                                        <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </buttonConfiguration>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <blurEffect style="regular"/>
+                                    </visualEffectView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EcK-eT-tCI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cXF-3X-ruK" firstAttribute="trailing" secondItem="EcK-eT-tCI" secondAttribute="trailing" id="4qp-yl-git"/>
+                            <constraint firstItem="nKL-bf-1dt" firstAttribute="width" secondItem="2iQ-4s-MZT" secondAttribute="width" id="Sol-HR-UvA"/>
+                            <constraint firstItem="cXF-3X-ruK" firstAttribute="leading" secondItem="EcK-eT-tCI" secondAttribute="leading" id="aW7-qK-AUL"/>
+                            <constraint firstItem="cXF-3X-ruK" firstAttribute="top" secondItem="EcK-eT-tCI" secondAttribute="top" id="jU3-rx-n8W"/>
+                            <constraint firstItem="cXF-3X-ruK" firstAttribute="bottom" secondItem="EcK-eT-tCI" secondAttribute="bottom" id="vZU-ST-6d1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ypb-ib-Zyz"/>
+                    <size key="freeformSize" width="414" height="1200"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ole-V2-rmU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1575.3623188405797" y="-1292.1195652173915"/>
+        </scene>
+        <!--Help Screen Controller-->
+        <scene sceneID="FmX-JJ-DII">
+            <objects>
+                <hostingController id="zA9-3i-Fg6" customClass="HelpScreenController" customModule="HardVoice" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="YoF-eo-BIb"/>
+                </hostingController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZUL-RA-E2q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2580" y="-1161"/>
         </scene>
     </scenes>
     <resources>
+        <image name="ellipsis" catalog="system" width="128" height="37"/>
         <image name="message" catalog="system" width="128" height="113"/>
+        <image name="message.fill" catalog="system" width="128" height="113"/>
+        <image name="play" catalog="system" width="120" height="128"/>
         <image name="preview" width="250" height="250"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemFillColor">
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -16,6 +16,7 @@
 		6C7CF89F27837749003AA14B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C7CF89D27837749003AA14B /* Main.storyboard */; };
 		6C7CF8A12783774B003AA14B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C7CF8A02783774B003AA14B /* Assets.xcassets */; };
 		6C855D9228A7A4D300935002 /* Audio.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6C855D9128A7A4D300935002 /* Audio.bundle */; };
+		6C8CD16128CCA9F2009AE8E1 /* HelpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8CD16028CCA9F2009AE8E1 /* HelpScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		6C7CF8A52783774B003AA14B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C855D9128A7A4D300935002 /* Audio.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Audio.bundle; path = HardVoice/Audio.bundle; sourceTree = "<group>"; };
 		6C855D9328A7C73600935002 /* HardVoice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HardVoice.entitlements; sourceTree = "<group>"; };
+		6C8CD16028CCA9F2009AE8E1 /* HelpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				6C855D9328A7C73600935002 /* HardVoice.entitlements */,
+				6C8CD16028CCA9F2009AE8E1 /* HelpScreen.swift */,
 				6C7AA74028C3F72E0099F076 /* AutoChangeScreen.swift */,
 				6C7CF89727837749003AA14B /* AppDelegate.swift */,
 				6C7CF89927837749003AA14B /* SceneDelegate.swift */,
@@ -168,6 +171,7 @@
 			files = (
 				6C7AA74128C3F72E0099F076 /* AutoChangeScreen.swift in Sources */,
 				6C7CF89C27837749003AA14B /* ViewController.swift in Sources */,
+				6C8CD16128CCA9F2009AE8E1 /* HelpScreen.swift in Sources */,
 				6C7CF89827837749003AA14B /* AppDelegate.swift in Sources */,
 				6C7CF89A27837749003AA14B /* SceneDelegate.swift in Sources */,
 				6C0921CB28BA4349001639D8 /* UIDevice.swift in Sources */,

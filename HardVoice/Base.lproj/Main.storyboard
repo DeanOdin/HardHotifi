@@ -7,46 +7,17 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="10943.otf">
-            <string>ASPHALTICSCRATCHRUSBYLYAJKA</string>
-        </array>
-    </customFonts>
     <scenes>
-        <!--Auto Change Screen-->
+        <!--Launch Screen-->
         <scene sceneID="iq5-sI-NX3">
             <objects>
-                <viewController id="Vqv-EW-qsQ" customClass="AutoChangeScreen" customModule="HardVoice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Vqv-EW-qsQ" customClass="LaunchScreen" customModule="HardVoice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dBK-WI-rMx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="preview" translatesAutoresizingMaskIntoConstraints="NO" id="j9f-PJ-Vr6">
-                                <rect key="frame" x="107" y="268" width="200" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="J7u-ZN-nwE"/>
-                                    <constraint firstAttribute="height" constant="200" id="dA9-XX-pbg"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="загрузка..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HoO-xe-tiW">
-                                <rect key="frame" x="107" y="668" width="200" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="Z9l-Dj-nWA"/>
-                                    <constraint firstAttribute="height" constant="200" id="fTh-T3-zZH"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ASPHALTICSCRATCHRUSBYLYAJKA" family="ASPHALTIC SCRATCH(RUS BY LYAJKA" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="P4X-L4-Y6c"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="HoO-xe-tiW" firstAttribute="centerX" secondItem="dBK-WI-rMx" secondAttribute="centerX" id="Apk-0u-kjg"/>
-                            <constraint firstItem="j9f-PJ-Vr6" firstAttribute="centerX" secondItem="dBK-WI-rMx" secondAttribute="centerX" id="IXC-6Q-Sg5"/>
-                            <constraint firstItem="HoO-xe-tiW" firstAttribute="centerY" secondItem="dBK-WI-rMx" secondAttribute="centerY" constant="400" id="Iva-Ll-cdK"/>
-                            <constraint firstItem="j9f-PJ-Vr6" firstAttribute="centerY" secondItem="dBK-WI-rMx" secondAttribute="centerY" id="f3g-Cg-SLV"/>
-                        </constraints>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="0.12909501435740894" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="Oym-bT-rco"/>
                     <connections>
@@ -55,7 +26,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kP4-iy-Ytw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="506" y="-995"/>
+            <point key="canvasLocation" x="505.79710144927537" y="-995.38043478260875"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -78,7 +49,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="5CU-3E-Uxy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UHe-Dq-ztc"/>
                             <constraint firstItem="5CU-3E-Uxy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aU5-Cj-eBZ"/>
@@ -240,12 +211,13 @@
                                             </toolbar>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1200" id="WZT-FK-ze8"/>
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemFillColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="nKL-bf-1dt" secondAttribute="bottom" id="91S-JI-FaI"/>
                                     <constraint firstItem="nKL-bf-1dt" firstAttribute="leading" secondItem="cXF-3X-ruK" secondAttribute="leading" id="PgJ-2f-A7g"/>
@@ -302,7 +274,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EcK-eT-tCI"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="cXF-3X-ruK" firstAttribute="trailing" secondItem="EcK-eT-tCI" secondAttribute="trailing" id="4qp-yl-git"/>
                             <constraint firstItem="nKL-bf-1dt" firstAttribute="width" secondItem="2iQ-4s-MZT" secondAttribute="width" id="Sol-HR-UvA"/>
@@ -335,12 +307,6 @@
         <image name="message.fill" catalog="system" width="128" height="113"/>
         <image name="play" catalog="system" width="120" height="128"/>
         <image name="preview" width="250" height="250"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemFillColor">
-            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

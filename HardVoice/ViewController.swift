@@ -20,8 +20,7 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
     var a = 1
     var i = 0
     
-
-        
+    
     
     
     // ReportSender

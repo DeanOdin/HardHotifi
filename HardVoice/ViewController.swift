@@ -18,10 +18,6 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
     
     var musicPlayer: AVPlayer!
     var a = 1
-    var i = 0
-    
-    
-    
     
     // ReportSender
     func sendEmail() {
@@ -37,78 +33,81 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
             // show failure alert
         }
     }
+    
+    
+    
+    //saveAudio
+    func saveAudio(fileName: String) {
+        print("1")
+        let file = fileName
+        let fileManager = FileManager.default
+        let url = Bundle.main.url(forResource: file, withExtension: "m4a", subdirectory: "Audio.bundle")!
+        let contents = fileManager.contents(atPath: url.path)
+        let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        let fileURL = dir.appendingPathComponent(file)
+        
+        do {
+            //TODO:
+            //MARK: contents - содержимое из пути, fileURL - путь куда + имя файла
+            try contents!.write(to: fileURL)
+            print(UIDevice.modelName)
+        }
+        
+        catch {
+            print("Error \(error)")
+        }
+    }
 
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         controller.dismiss(animated: true)
     }
-    
     
     @IBAction func play_1(_ sender: Any) {
         //musicPlayer.play()
         //playVoice(fileName: "dadova", fileExt: "m4a")
         //sendEmail()
         // print(UIDevice.modelName)
-        
-        print(1);
-        let file = "track.mp3"
-
-        let fileManager = FileManager.default
-        
-        let url = Bundle.main.url(forResource: "dadova", withExtension: "mp3", subdirectory: "Audio.bundle")!
-        
-        let contents = fileManager.contents(atPath: url.path)
-        
-        let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-        
-        let fileURL = dir.appendingPathComponent(file)
-        
-        do {
-            //TODO:
-            //MARK: contents - содержимое из пути, fileURL - путь куда + имя файла
-            
-            try contents!.write(to: fileURL)
-            
-            print(2);
-        }
-        
-        catch {
-            print("Error \(error)")
-        }
-        print(3);
-
-        
-    }
-    
-    @IBAction func stop_1(_ sender: Any) {
-    
-        // print(UIDevice.modelName)
-        tapped()
-        
+        //HapticsManager.instanse.impact(style: .medium)
+        // saveVoiceToDir(fileName: "dadova", fileExt: "m4a")
     }
     @IBAction func btSupport(_ sender: Any) {
-        
-        tapped()
+        HapticsManager.instanse.impact(style: .heavy)
         sendEmail()
-    
     }
     
-    
-    @IBAction func save_1(_ sender: Any) {
-        
-       // saveVoiceToDir(fileName: "dadova", fileExt: "m4a")
-       
-        
+    @IBAction func btPlay1(_ sender: Any) {
+        playVoice(fileName: "dadova", fileExt: "mp3")
     }
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        switch segue.identifier {
-//        case "sgHelpScreen":
-//            segue.destination.help
-//        }
-//    }
-    
-    
-    
+    @IBAction func btPlay2(_ sender: Any) {
+        playVoice(fileName: "salut", fileExt: "m4a")
+    }
+    @IBAction func btSave2(_ sender: Any) {
+        saveAudio(fileName:"nikakogo_prazdnika.m4a")
+    }
+    @IBAction func btPlay3(_ sender: Any) {
+        playVoice(fileName: "nikakogo_prazdnika", fileExt: "m4a")
+    }
+    @IBAction func btPlay4(_ sender: Any) {
+        playVoice(fileName: "bros_bulku", fileExt: "m4a")
+    }
+    @IBAction func btPlay5(_ sender: Any) {
+        playVoice(fileName: "jresh", fileExt: "m4a")
+    }
+    @IBAction func btPlay6(_ sender: Any) {
+        playVoice(fileName: "hahaha_fear", fileExt: "m4a")
+    }
+    @IBAction func btPlay7(_ sender: Any) {
+        playVoice(fileName: "neponimay", fileExt: "m4a")
+    }
+    @IBAction func btPlay8(_ sender: Any) {
+        playVoice(fileName: "s_takimi_glazami", fileExt: "m4a")
+    }
+    @IBAction func btPlay9(_ sender: Any) {
+        playVoice(fileName: "paraparapam", fileExt: "m4a")
+    }
+    @IBAction func btPlay10(_ sender: Any) {
+        playVoice(fileName: "auf", fileExt: "m4a")
+    }
     /**
         Start strimer"voice
      - parameter fileName:Name of the audio file
@@ -129,18 +128,18 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
             object: nil)
     }
 
-    
+    /*
     func saveVoiceToDir(fileName: String, fileExt: String) -> Void {
      
     
-    /*
+    
         let containerURL = FileManager.default.url(forUbiquityContainerIdentifier: nil)
         let documentDirectoryURL = containerURL!.appendingPathComponent("Documents")
         let documentURL = documentDirectoryURL.appendingPathComponent("dadova.m4a")
-    */
+    
 
     }
-
+     */
         
         @objc func playerItemDidFinishPlaying(sender: Notification) {
             
@@ -148,61 +147,6 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
     
         }
   
-    /*
-    override func viewDidLoad() {
-            super.viewDidLoad()
-
-            let btn = UIButton()
-            btn.translatesAutoresizingMaskIntoConstraints = false
-            view.addSubview(btn)
-
-            btn.widthAnchor.constraint(equalToConstant: 128).isActive = true
-            btn.heightAnchor.constraint(equalToConstant: 128).isActive = true
-            btn.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-            btn.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-
-            btn.setTitle("Tap here!", for: .normal)
-            btn.setTitleColor(UIColor.red, for: .normal)
-            btn.addTarget(self, action: #selector(tapped), for: .touchUpInside)
-        }
-     */
-
-        @objc func tapped() {
-            i += 1
-            print("Running \(i)")
-
-            switch i {
-            case 1:
-                let generator = UINotificationFeedbackGenerator()
-                generator.notificationOccurred(.error)
-
-            case 2:
-                let generator = UINotificationFeedbackGenerator()
-                generator.notificationOccurred(.success)
-
-            case 3:
-                let generator = UINotificationFeedbackGenerator()
-                generator.notificationOccurred(.warning)
-
-            case 4:
-                let generator = UIImpactFeedbackGenerator(style: .light)
-                generator.impactOccurred()
-
-            case 5:
-                let generator = UIImpactFeedbackGenerator(style: .medium)
-                generator.impactOccurred()
-
-            case 6:
-                let generator = UIImpactFeedbackGenerator(style: .heavy)
-                generator.impactOccurred()
-
-            default:
-                let generator = UISelectionFeedbackGenerator()
-                generator.selectionChanged()
-                i = 0
-            }
-        }
-    
 }
 
     

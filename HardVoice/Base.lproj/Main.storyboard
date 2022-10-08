@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vqv-EW-qsQ">
-    <device id="retina5_5" orientation="portrait" appearance="dark"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -21,12 +21,57 @@
                     </view>
                     <navigationItem key="navigationItem" id="Oym-bT-rco"/>
                     <connections>
-                        <segue destination="NVj-v6-fVn" kind="presentation" identifier="goToMainScreen" modalPresentationStyle="fullScreen" id="Xi8-2k-AQl"/>
+                        <segue destination="RHm-uL-Mz5" kind="presentation" identifier="goToMainScreen" id="3cK-UX-iAK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kP4-iy-Ytw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="505.79710144927537" y="-995.38043478260875"/>
+        </scene>
+        <!--My Table View Controller-->
+        <scene sceneID="iak-QT-FIM">
+            <objects>
+                <tableViewController id="RHm-uL-Mz5" customClass="MyTableViewController" customModule="HardVoice" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="iNa-qD-OAn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="I2N-4y-UQj" detailTextLabel="SG2-3s-bTq" style="IBUITableViewCellStyleSubtitle" id="vAU-2W-Z1V">
+                                <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vAU-2W-Z1V" id="ybr-2W-qEA">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="I2N-4y-UQj">
+                                            <rect key="frame" x="20" y="7.0000000000000009" width="25" height="14.333333333333334"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SG2-3s-bTq">
+                                            <rect key="frame" x="19.999999999999996" y="23.333333333333336" width="40.666666666666664" height="13.333333333333334"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="RHm-uL-Mz5" id="Xfi-AH-Oz3"/>
+                            <outlet property="delegate" destination="RHm-uL-Mz5" id="TEb-e5-Pxe"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="pMV-Hz-VJK"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h6p-1k-At5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1494" y="-899"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -47,6 +92,12 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="gQT-i3-3dh"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="WLK-IS-qQ4"/>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5U-Fs-WyX">
+                                <rect key="frame" x="153" y="38" width="67" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -62,12 +113,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1575" y="-285"/>
+            <point key="canvasLocation" x="506" y="-273"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="OZS-8m-rik">
             <objects>
-                <viewController id="NVj-v6-fVn" sceneMemberID="viewController">
+                <viewController id="NVj-v6-fVn" customClass="ViewController" customModule="HardVoice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2iQ-4s-MZT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -78,137 +129,411 @@
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nKL-bf-1dt">
                                         <rect key="frame" x="0.0" y="-8" width="414" height="1200"/>
                                         <subviews>
-                                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EqN-Yq-FE1">
-                                                <rect key="frame" x="23" y="116" width="368" height="44"/>
+                                            <toolbar opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EqN-Yq-FE1">
+                                                <rect key="frame" x="0.0" y="116" width="391" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <items>
-                                                    <barButtonItem title="Дадова" style="plain" id="7Q0-gX-gT5">
-                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <barButtonItem style="plain" id="Rcx-Ah-e02">
+                                                        <textField key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" id="ubF-na-3ku">
+                                                            <rect key="frame" x="20" y="10.666666666666666" width="40" height="22.666666666666671"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="ДаДова">
+                                                                    <attributes>
+                                                                        <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <font key="NSFont" size="21" name="ASPHALTICSCRATCHRUSBYLYAJKA"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
                                                     </barButtonItem>
-                                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="yC8-hS-4eH"/>
                                                     <barButtonItem width="3" systemItem="flexibleSpace" id="1mK-DG-wTG"/>
                                                     <barButtonItem image="play" catalog="system" id="xNY-CQ-8CG">
                                                         <color key="tintColor" systemColor="systemRedColor"/>
                                                         <connections>
-                                                            <action selector="play_1:" destination="BYZ-38-t0r" id="VnV-z3-r0W"/>
+                                                            <action selector="btPlay1:" destination="NVj-v6-fVn" id="UUJ-ss-F47"/>
                                                         </connections>
                                                     </barButtonItem>
                                                     <barButtonItem image="ellipsis" catalog="system" id="aYi-W2-F0A">
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <connections>
-                                                            <action selector="save_1:" destination="BYZ-38-t0r" id="x4U-NE-4WB"/>
-                                                            <segue destination="zA9-3i-Fg6" kind="presentation" modalPresentationStyle="pageSheet" modalTransitionStyle="crossDissolve" id="2xY-D3-YFx"/>
+                                                            <action selector="btSave2:" destination="NVj-v6-fVn" id="UjF-4k-srI"/>
+                                                            <segue destination="zA9-3i-Fg6" kind="show" id="2xY-D3-YFx"/>
                                                         </connections>
                                                     </barButtonItem>
                                                 </items>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </toolbar>
-                                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cQ2-n1-VGe">
-                                                <rect key="frame" x="23" y="160" width="368" height="44"/>
+                                            <toolbar opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KKD-gb-GhM">
+                                                <rect key="frame" x="0.0" y="160" width="391" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <items>
-                                                    <barButtonItem title="Салют" style="plain" id="caP-XV-eyM">
-                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <barButtonItem style="plain" id="BR4-bB-jj2">
+                                                        <textField key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" id="HfL-qs-KlI">
+                                                            <rect key="frame" x="20" y="10.666666666666666" width="82" height="22.666666666666671"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="Пожилая ракета">
+                                                                    <attributes>
+                                                                        <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <font key="NSFont" size="21" name="ASPHALTICSCRATCHRUSBYLYAJKA"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
                                                     </barButtonItem>
-                                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="9wb-D2-8YS"/>
-                                                    <barButtonItem width="3" systemItem="flexibleSpace" id="2mB-aI-VK5"/>
-                                                    <barButtonItem image="play" catalog="system" id="u48-VO-jP2">
+                                                    <barButtonItem width="3" systemItem="flexibleSpace" id="cYf-lS-I6T"/>
+                                                    <barButtonItem image="play" catalog="system" id="Hbn-F6-jCG">
                                                         <color key="tintColor" systemColor="systemRedColor"/>
                                                         <connections>
-                                                            <action selector="play_1:" destination="BYZ-38-t0r" id="8sc-JO-K9B"/>
+                                                            <action selector="btPlay2:" destination="NVj-v6-fVn" id="cDb-hq-z9y"/>
                                                         </connections>
                                                     </barButtonItem>
-                                                    <barButtonItem image="ellipsis" catalog="system" id="w6K-Ou-dIy">
+                                                    <barButtonItem image="ellipsis" catalog="system" id="kvV-hU-tGb">
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <connections>
-                                                            <action selector="save_1:" destination="BYZ-38-t0r" id="xB2-iS-mas"/>
+                                                            <action selector="save_1:" destination="BYZ-38-t0r" id="nAT-vK-zyb"/>
+                                                            <segue destination="zA9-3i-Fg6" kind="show" id="yJW-Rm-wGh"/>
                                                         </connections>
                                                     </barButtonItem>
                                                 </items>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </toolbar>
-                                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GyG-B1-nDJ">
-                                                <rect key="frame" x="23" y="204" width="368" height="44"/>
+                                            <toolbar opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fgH-xO-kfu">
+                                                <rect key="frame" x="0.0" y="204" width="391" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <items>
-                                                    <barButtonItem title="Никакого праздника" style="plain" id="fSF-aj-07E">
-                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <barButtonItem style="plain" id="N1q-3A-NZZ">
+                                                        <textField key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" id="Ql6-WX-Q0Q">
+                                                            <rect key="frame" x="20" y="10.666666666666666" width="103.66666666666667" height="22.666666666666671"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="Никакого празДНика">
+                                                                    <attributes>
+                                                                        <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <font key="NSFont" size="21" name="ASPHALTICSCRATCHRUSBYLYAJKA"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
                                                     </barButtonItem>
-                                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="up8-1z-zRb"/>
-                                                    <barButtonItem width="3" systemItem="flexibleSpace" id="JUn-fP-WFv"/>
-                                                    <barButtonItem image="play" catalog="system" id="XKr-F9-unA">
+                                                    <barButtonItem width="3" systemItem="flexibleSpace" id="zpc-JN-oVg"/>
+                                                    <barButtonItem image="play" catalog="system" id="DMJ-sE-Sbo">
                                                         <color key="tintColor" systemColor="systemRedColor"/>
                                                         <connections>
-                                                            <action selector="play_1:" destination="BYZ-38-t0r" id="Wd0-j6-yJO"/>
+                                                            <action selector="btPlay3:" destination="NVj-v6-fVn" id="1QF-1a-qza"/>
                                                         </connections>
                                                     </barButtonItem>
-                                                    <barButtonItem image="ellipsis" catalog="system" id="8ia-Qi-AkY">
+                                                    <barButtonItem image="ellipsis" catalog="system" id="IqH-O8-T8e">
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <connections>
-                                                            <action selector="save_1:" destination="BYZ-38-t0r" id="J4U-8Y-NEL"/>
+                                                            <action selector="save_1:" destination="BYZ-38-t0r" id="prN-uz-Nv2"/>
+                                                            <segue destination="zA9-3i-Fg6" kind="show" id="IF2-rm-lTL"/>
                                                         </connections>
                                                     </barButtonItem>
                                                 </items>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </toolbar>
-                                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dli-kG-jMA">
-                                                <rect key="frame" x="23" y="248" width="368" height="44"/>
+                                            <toolbar opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NGa-Yk-yc9">
+                                                <rect key="frame" x="0.0" y="248" width="391" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <items>
-                                                    <barButtonItem title="Помогите грабят" style="plain" id="2Sj-Kv-gbI">
-                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <barButtonItem style="plain" id="N7M-aB-Xhu">
+                                                        <textField key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" id="MaR-sn-zrG">
+                                                            <rect key="frame" x="20" y="10.666666666666666" width="63" height="22.666666666666671"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="Брось Булку">
+                                                                    <attributes>
+                                                                        <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <font key="NSFont" size="21" name="ASPHALTICSCRATCHRUSBYLYAJKA"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
                                                     </barButtonItem>
-                                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="wZx-wC-sub"/>
-                                                    <barButtonItem width="3" systemItem="flexibleSpace" id="rlm-JT-qWi"/>
-                                                    <barButtonItem image="play" catalog="system" id="rNK-RM-lvQ">
+                                                    <barButtonItem width="3" systemItem="flexibleSpace" id="Qgv-hd-enx"/>
+                                                    <barButtonItem image="play" catalog="system" id="rNi-DH-SAP">
                                                         <color key="tintColor" systemColor="systemRedColor"/>
                                                         <connections>
-                                                            <action selector="play_1:" destination="BYZ-38-t0r" id="N18-je-VBZ"/>
+                                                            <action selector="btPlay4:" destination="NVj-v6-fVn" id="BQ7-TX-9RZ"/>
                                                         </connections>
                                                     </barButtonItem>
-                                                    <barButtonItem image="ellipsis" catalog="system" id="anN-pe-fQh">
+                                                    <barButtonItem image="ellipsis" catalog="system" id="rWo-Gg-g2W">
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <connections>
-                                                            <action selector="save_1:" destination="BYZ-38-t0r" id="1Gf-Jd-QXZ"/>
+                                                            <action selector="save_1:" destination="BYZ-38-t0r" id="asf-h1-5RA"/>
+                                                            <segue destination="zA9-3i-Fg6" kind="show" id="ork-rT-CbC"/>
                                                         </connections>
                                                     </barButtonItem>
                                                 </items>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </toolbar>
-                                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AlU-ss-YH8">
-                                                <rect key="frame" x="23" y="292" width="368" height="44"/>
+                                            <toolbar opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YQd-Dn-r9x">
+                                                <rect key="frame" x="0.0" y="292" width="391" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <items>
-                                                    <barButtonItem title="Ешь блюй и спать" style="plain" id="SgJ-gQ-Oae">
-                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <barButtonItem style="plain" id="DUQ-gI-CFE">
+                                                        <textField key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" id="vXT-pZ-dyQ">
+                                                            <rect key="frame" x="20" y="10.666666666666666" width="60.666666666666657" height="22.666666666666671"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="Жрёшь Да?">
+                                                                    <attributes>
+                                                                        <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <font key="NSFont" size="21" name="ASPHALTICSCRATCHRUSBYLYAJKA"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
                                                     </barButtonItem>
-                                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="hkT-5E-w5f"/>
-                                                    <barButtonItem width="3" systemItem="flexibleSpace" id="mDB-f3-0Am"/>
-                                                    <barButtonItem image="play" catalog="system" id="m3k-Bn-KwK">
+                                                    <barButtonItem width="3" systemItem="flexibleSpace" id="txZ-2a-vh9"/>
+                                                    <barButtonItem image="play" catalog="system" id="9Ma-2p-sPi">
                                                         <color key="tintColor" systemColor="systemRedColor"/>
                                                         <connections>
-                                                            <action selector="play_1:" destination="BYZ-38-t0r" id="Njo-Mu-jCD"/>
+                                                            <action selector="btPlay5:" destination="NVj-v6-fVn" id="x3V-QL-glW"/>
                                                         </connections>
                                                     </barButtonItem>
-                                                    <barButtonItem image="ellipsis" catalog="system" id="vOR-os-NpN">
+                                                    <barButtonItem image="ellipsis" catalog="system" id="5fD-IL-NM2">
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <connections>
-                                                            <action selector="save_1:" destination="BYZ-38-t0r" id="GcP-Ld-QEL"/>
+                                                            <action selector="save_1:" destination="BYZ-38-t0r" id="phW-ao-YoD"/>
+                                                            <segue destination="zA9-3i-Fg6" kind="show" id="TXB-DA-QnX"/>
                                                         </connections>
                                                     </barButtonItem>
                                                 </items>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </toolbar>
+                                            <toolbar opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d54-x9-8wr">
+                                                <rect key="frame" x="0.0" y="336" width="391" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <items>
+                                                    <barButtonItem style="plain" id="PGp-My-AWI">
+                                                        <textField key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" id="aML-3e-Az6">
+                                                            <rect key="frame" x="20" y="10.666666666666666" width="35" height="22.666666666666671"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="Хахаха">
+                                                                    <attributes>
+                                                                        <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <font key="NSFont" size="21" name="ASPHALTICSCRATCHRUSBYLYAJKA"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </barButtonItem>
+                                                    <barButtonItem width="3" systemItem="flexibleSpace" id="HUJ-Zl-Ibf"/>
+                                                    <barButtonItem image="play" catalog="system" id="uOm-cZ-Wgn">
+                                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                                        <connections>
+                                                            <action selector="btPlay6:" destination="NVj-v6-fVn" id="D0V-H9-88q"/>
+                                                        </connections>
+                                                    </barButtonItem>
+                                                    <barButtonItem image="ellipsis" catalog="system" id="Ur1-g5-uq4">
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <connections>
+                                                            <action selector="save_1:" destination="BYZ-38-t0r" id="qZs-88-AqI"/>
+                                                            <segue destination="zA9-3i-Fg6" kind="show" id="LW3-Op-WUh"/>
+                                                        </connections>
+                                                    </barButtonItem>
+                                                </items>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </toolbar>
+                                            <toolbar opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uvq-Nv-Ya0">
+                                                <rect key="frame" x="0.0" y="380" width="391" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <items>
+                                                    <barButtonItem style="plain" id="VgC-P4-GqN">
+                                                        <textField key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" id="ARe-sQ-lhD">
+                                                            <rect key="frame" x="20" y="10.666666666666666" width="102.66666666666667" height="22.666666666666671"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="Нифига Не поНимаю">
+                                                                    <attributes>
+                                                                        <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <font key="NSFont" size="21" name="ASPHALTICSCRATCHRUSBYLYAJKA"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </barButtonItem>
+                                                    <barButtonItem width="3" systemItem="flexibleSpace" id="GPH-7w-lI3"/>
+                                                    <barButtonItem image="play" catalog="system" id="DnA-Km-2dG">
+                                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                                        <connections>
+                                                            <action selector="btPlay7:" destination="NVj-v6-fVn" id="Uac-fm-3Fl"/>
+                                                        </connections>
+                                                    </barButtonItem>
+                                                    <barButtonItem image="ellipsis" catalog="system" id="5WX-YK-CjS">
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <connections>
+                                                            <action selector="save_1:" destination="BYZ-38-t0r" id="Z5R-CW-5dz"/>
+                                                            <segue destination="zA9-3i-Fg6" kind="show" id="8og-j3-g1s"/>
+                                                        </connections>
+                                                    </barButtonItem>
+                                                </items>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </toolbar>
+                                            <toolbar opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rgj-FM-Qfm">
+                                                <rect key="frame" x="0.0" y="424" width="391" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <items>
+                                                    <barButtonItem style="plain" id="dYk-12-CFh">
+                                                        <textField key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" id="bld-aj-GvY">
+                                                            <rect key="frame" x="20" y="10.666666666666666" width="134.66666666666666" height="22.666666666666671"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="Вот с такими вот глазами">
+                                                                    <attributes>
+                                                                        <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <font key="NSFont" size="21" name="ASPHALTICSCRATCHRUSBYLYAJKA"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </barButtonItem>
+                                                    <barButtonItem width="3" systemItem="flexibleSpace" id="MzR-Pm-4wE"/>
+                                                    <barButtonItem image="play" catalog="system" id="6r5-m3-FZP">
+                                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                                        <connections>
+                                                            <action selector="btPlay8:" destination="NVj-v6-fVn" id="qLP-mn-LDe"/>
+                                                        </connections>
+                                                    </barButtonItem>
+                                                    <barButtonItem image="ellipsis" catalog="system" id="uq5-Cu-6pf">
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <connections>
+                                                            <action selector="save_1:" destination="BYZ-38-t0r" id="3SR-XE-64X"/>
+                                                            <segue destination="zA9-3i-Fg6" kind="show" id="IS2-aq-Puv"/>
+                                                        </connections>
+                                                    </barButtonItem>
+                                                </items>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </toolbar>
+                                            <toolbar opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z4E-if-cAB">
+                                                <rect key="frame" x="0.0" y="468" width="391" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <items>
+                                                    <barButtonItem style="plain" id="1wm-jf-SxL">
+                                                        <textField key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" id="IrU-A6-zl6">
+                                                            <rect key="frame" x="20" y="10.666666666666666" width="94.666666666666671" height="22.666666666666671"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="В журНале Елараш">
+                                                                    <attributes>
+                                                                        <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <font key="NSFont" size="21" name="ASPHALTICSCRATCHRUSBYLYAJKA"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </barButtonItem>
+                                                    <barButtonItem width="3" systemItem="flexibleSpace" id="Jqu-76-viL"/>
+                                                    <barButtonItem image="play" catalog="system" id="Any-YI-xY2">
+                                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                                        <connections>
+                                                            <action selector="btPlay9:" destination="NVj-v6-fVn" id="s6F-YF-aMN"/>
+                                                        </connections>
+                                                    </barButtonItem>
+                                                    <barButtonItem image="ellipsis" catalog="system" id="Odh-Xm-Lu9">
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <connections>
+                                                            <action selector="save_1:" destination="BYZ-38-t0r" id="RWH-Jx-Pxp"/>
+                                                            <segue destination="zA9-3i-Fg6" kind="show" id="rRx-rj-wQE"/>
+                                                        </connections>
+                                                    </barButtonItem>
+                                                </items>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </toolbar>
+                                            <toolbar opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Up3-O9-MRK">
+                                                <rect key="frame" x="0.0" y="512" width="391" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <items>
+                                                    <barButtonItem style="plain" id="qhE-kY-mpX">
+                                                        <textField key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" id="fST-05-zrc">
+                                                            <rect key="frame" x="20" y="10.666666666666666" width="49.333333333333343" height="22.666666666666671"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="Ауфффф">
+                                                                    <attributes>
+                                                                        <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <font key="NSFont" size="21" name="ASPHALTICSCRATCHRUSBYLYAJKA"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </barButtonItem>
+                                                    <barButtonItem width="3" systemItem="flexibleSpace" id="rAL-O9-bfJ"/>
+                                                    <barButtonItem image="play" catalog="system" id="GCH-k0-0es">
+                                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                                        <connections>
+                                                            <action selector="btPlay10:" destination="NVj-v6-fVn" id="WUE-YX-cKg"/>
+                                                        </connections>
+                                                    </barButtonItem>
+                                                    <barButtonItem image="ellipsis" catalog="system" id="JtA-xO-qwW">
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <connections>
+                                                            <action selector="save_1:" destination="BYZ-38-t0r" id="9dc-en-jwi"/>
+                                                            <segue destination="zA9-3i-Fg6" kind="show" id="tCC-4x-cGO"/>
+                                                        </connections>
+                                                    </barButtonItem>
+                                                </items>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </toolbar>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="R9t-RB-c04">
+                                                <rect key="frame" x="60" y="667" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </tableView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -243,23 +568,19 @@
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ZH-y9-2KN">
                                                     <rect key="frame" x="325" y="44" width="67" height="65"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" image="message" catalog="system">
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" image="message" catalog="system">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <buttonConfiguration key="configuration" style="tinted" image="message" catalog="system">
                                                         <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </buttonConfiguration>
                                                     <connections>
-                                                        <action selector="btSupport:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4NZ-Wb-R3V"/>
+                                                        <action selector="btSupport:" destination="NVj-v6-fVn" eventType="touchUpInside" id="b8H-Ob-uVo"/>
                                                     </connections>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94A-mN-NNe">
-                                                    <rect key="frame" x="259" y="44" width="66" height="65"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" image="message.fill" catalog="system">
-                                                        <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </buttonConfiguration>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
@@ -288,7 +609,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ole-V2-rmU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1575.3623188405797" y="-1292.1195652173915"/>
+            <point key="canvasLocation" x="1574" y="-1739"/>
         </scene>
         <!--Help Screen Controller-->
         <scene sceneID="FmX-JJ-DII">
@@ -298,15 +619,20 @@
                 </hostingController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZUL-RA-E2q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2580" y="-1161"/>
+            <point key="canvasLocation" x="2691" y="-1740"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="2xY-D3-YFx"/>
+    </inferredMetricsTieBreakers>
     <resources>
-        <image name="ellipsis" catalog="system" width="128" height="37"/>
-        <image name="message" catalog="system" width="128" height="113"/>
-        <image name="message.fill" catalog="system" width="128" height="113"/>
-        <image name="play" catalog="system" width="120" height="128"/>
+        <image name="ellipsis" catalog="system" width="32" height="32"/>
+        <image name="message" catalog="system" width="32" height="32"/>
+        <image name="play" catalog="system" width="32" height="32"/>
         <image name="preview" width="250" height="250"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

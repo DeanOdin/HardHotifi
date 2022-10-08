@@ -10,41 +10,41 @@ import UIKit
 
 struct HelpScreen: View {
     
-    private var numberOfImage = 5
+    private var numberOfImage = 13
     
     // Подтягиваю скрины с подсказками
     var body: some View {
         
-        GeometryReader { proxy in
-            TabView{
-                
-            ForEach(1..<numberOfImage) { num    in
-                Image ("\(num)")
-                    .resizable()
-                    .scaledToFill()
-                   // .overlay(Color.black.opacity(0.4))
-                    .tag(num)
-                }
+        HStack {
+            GeometryReader { proxy in
+                TabView{
+                    
+                ForEach(1..<numberOfImage) { num    in
+                    Image ("\(num)")
+                        .resizable()
+                        .scaledToFill()
+                       // .overlay(Color.black.opacity(0.4))
+                        .tag(num)
+                    }
 
-            }.tabViewStyle(PageTabViewStyle())
-            .clipShape(RoundedRectangle(cornerRadius: 5))
-            .padding()
-            .frame(width: proxy.size.width, height: proxy.size.height / 3)
-            
-            VStack(alignment: .leading ){
+                }.tabViewStyle(PageTabViewStyle())
+                .clipShape(RoundedRectangle(cornerRadius: 5))
+                .padding()
+                .frame(width: proxy.size.width, height: proxy.size.height / 3)
                 
-                    Text("Шаг 1")
-                    .offset(y: 250)
-                    .padding()
-                    .offset(x: 10)
-                    .font(.title)
+                VStack(alignment: .leading ){
                     
+                        Text("Листай подсказку")
+                        .offset(y: 250)
+                        .padding()
+                        .offset(x: 10)
+                        .font(.title)
                     
-                HStack {
-                    Text("Скипай пальцем картинку")
-                    .padding()
                 }
+                
+                
             }
+           
         }
         
         

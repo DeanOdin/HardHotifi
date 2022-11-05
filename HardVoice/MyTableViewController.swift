@@ -9,11 +9,15 @@ import UIKit
 
 class MyTableViewController: UITableViewController {
 
-    var audioList:[Audios] = [Audios]()
+    var audioList:[AudioFile] = [AudioFile]()
+    
+    @IBOutlet var playTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        playTableView.separatorStyle = .none
         
+
         fetchData()
         
         
@@ -41,10 +45,20 @@ class MyTableViewController: UITableViewController {
         UITableViewCell {
             let cell: UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
             
-            cell?.textLabel?.text = audioList[indexPath.row].name
-            cell?.detailTextLabel?.text = audioList[indexPath.row].ext
+            cell?.textLabel?.text = audioList[indexPath.row].caption
             return cell!
-        }
+ 
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        /*
+        tableView.deselectRow(at: <#T##IndexPath#>, animated: true)
+        guard let cell = tableView.cellForRow(at: <#T##IndexPath#>) as?
+    */
+        
+        Audio.current.playVoice(file: audioList[indexPath.row])
+                   
+    }
     
     func fetchData() {
         guard let fileLocation = Bundle.main.url(forResource: "audios", withExtension: "json")
@@ -54,7 +68,7 @@ class MyTableViewController: UITableViewController {
         
         do {
             let data = try Data(contentsOf: fileLocation)
-            let receivedData = try JSONDecoder().decode([Audios].self, from: data)
+            let receivedData = try JSONDecoder().decode([AudioFile].self, from: data)
             
             audioList = receivedData
             

@@ -1,11 +1,79 @@
 [
     {
+        "id": 0,
+        "caption": "Салют",
         "name": "salut",
         "ext": "m4a"
     },
 
     {
+        "id": 1,
+        "caption": "Ауф",
         "name": "auf",
         "ext": "m4a"
+    },
+    
+    {
+        "id": 2,
+        "caption": "Боевой клич",
+        "name": "boevoi_klch",
+        "ext": "m4a"
+    },
+    
+    {
+        "id": 3,
+        "caption": "Брось булку",
+        "name": "bros_bulku",
+        "ext": "m4a"
+    },
+    
+    {
+        "id": 4,
+        "caption": "Дадова",
+        "name": "dadova",
+        "ext": "mp3"
+    },
+    
+    {
+        "id": 5,
+        "caption": "Злой смех",
+        "name": "hahaha_fear",
+        "ext": "m4a"
+    },
+    
+    {
+        "id": 6,
+        "caption": "Опять жрешь да?",
+        "name": "jresh",
+        "ext": "m4a"
+    },
+    
+    {
+        "id": 7,
+        "caption": "Ничего не понимаю",
+        "name": "neponimay",
+        "ext": "m4a"
+    },
+    
+    {
+        "id": 8,
+        "caption": "Никакого праздника",
+        "name": "nikakogo_prazdnika",
+        "ext": "m4a"
+    },
+    
+    {
+        "id": 9,
+        "caption": "В журнале Ералаш",
+        "name": "paraparapam",
+        "ext": "m4a"
+    },
+    
+    {
+        "id": 10,
+        "caption": "Вот с такими глазами",
+        "name": "s_takimi_glazami",
+        "ext": "m4a"
     }
+  
 ]

@@ -12,16 +12,15 @@ class MyTableViewController: UITableViewController {
     var audioList:[AudioFile] = [AudioFile]()
     
     @IBOutlet var playTableView: UITableView!
+    @IBOutlet weak var previewImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         playTableView.separatorStyle = .none
         
-
+        previewImageSet()
         fetchData()
         
-        
-
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -46,6 +45,7 @@ class MyTableViewController: UITableViewController {
             let cell: UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
             
             cell?.textLabel?.text = audioList[indexPath.row].caption
+            cell?.textLabel?.font = UIFont.init(name: "ASPHALTIC SCRATCH(RUS BY LYAJKA", size: 24 )
             return cell!
  
     }
@@ -59,6 +59,13 @@ class MyTableViewController: UITableViewController {
         Audio.current.playVoice(file: audioList[indexPath.row])
                    
     }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+            super.traitCollectionDidChange(previousTraitCollection)
+        
+        previewImageSet()
+        
+        }
     
     func fetchData() {
         guard let fileLocation = Bundle.main.url(forResource: "audios", withExtension: "json")
@@ -77,11 +84,16 @@ class MyTableViewController: UITableViewController {
                 
             }
             
-            
         }
         catch {
             print("error")
         }
+    }
+    
+    func previewImageSet() {
+        // Упрощенный  if else
+        let color: UIColor = self.traitCollection.userInterfaceStyle == .dark ? .white : .black
+        previewImage.image = previewImage.image?.mask(with: color)
     }
 }
 

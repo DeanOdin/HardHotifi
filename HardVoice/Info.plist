@@ -4,7 +4,10 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>18036.otf</string>
 		<string>10943.otf</string>
+		<string>19514.otf</string>
+		<string>17465.otf</string>
 	</array>
 	<key>UIFileSharingEnabled</key>
 	<true/>

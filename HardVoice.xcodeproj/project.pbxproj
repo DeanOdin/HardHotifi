@@ -8,9 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		6C0921CB28BA4349001639D8 /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0921CA28BA4349001639D8 /* UIDevice.swift */; };
+		6C0DBFC529207503009F99F2 /* 17465.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6CD4A2AC29170C8B0025AA21 /* 17465.otf */; };
+		6C0DBFC62920750C009F99F2 /* 18036.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6CD4A2AD29170F470025AA21 /* 18036.otf */; };
+		6C0DBFC729207510009F99F2 /* 18969.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6CD4A2AE29170F470025AA21 /* 18969.otf */; };
+		6C0DBFC829207513009F99F2 /* 19514.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6CD4A2AA29170C500025AA21 /* 19514.otf */; };
 		6C31534F28C3CAF1006B9F2B /* 10943.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6C31534E28C3CAF1006B9F2B /* 10943.otf */; };
 		6C3F10DA28F1DBBC00EA8658 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3F10D928F1DBBC00EA8658 /* Audio.swift */; };
 		6C4EBDEE28E07F5000EED3F7 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4EBDED28E07F5000EED3F7 /* HapticsManager.swift */; };
+		6C56F934292A37610078DE8F /* ParticleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C56F933292A37610078DE8F /* ParticleScene.swift */; };
+		6C56F938292A37CB0078DE8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C56F936292A37CB0078DE8F /* Assets.xcassets */; };
+		6C56F93A292A38220078DE8F /* SparksParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6C56F939292A38220078DE8F /* SparksParticle.sks */; };
 		6C7CF89827837749003AA14B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7CF89727837749003AA14B /* AppDelegate.swift */; };
 		6C7CF89A27837749003AA14B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7CF89927837749003AA14B /* SceneDelegate.swift */; };
 		6C7CF89C27837749003AA14B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7CF89B27837749003AA14B /* ViewController.swift */; };
@@ -30,6 +37,9 @@
 		6C31534E28C3CAF1006B9F2B /* 10943.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 10943.otf; sourceTree = "<group>"; };
 		6C3F10D928F1DBBC00EA8658 /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
 		6C4EBDED28E07F5000EED3F7 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
+		6C56F933292A37610078DE8F /* ParticleScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleScene.swift; sourceTree = "<group>"; };
+		6C56F936292A37CB0078DE8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C56F939292A38220078DE8F /* SparksParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SparksParticle.sks; sourceTree = "<group>"; };
 		6C7CF89427837749003AA14B /* HardVoice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HardVoice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C7CF89727837749003AA14B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C7CF89927837749003AA14B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +96,8 @@
 		6C7CF88B27837749003AA14B = {
 			isa = PBXGroup;
 			children = (
+				6C56F939292A38220078DE8F /* SparksParticle.sks */,
+				6C56F936292A37CB0078DE8F /* Assets.xcassets */,
 				6C7CF89627837749003AA14B /* HardVoice */,
 				6C7CF89527837749003AA14B /* Products */,
 			);
@@ -110,6 +122,7 @@
 				6C7CF89927837749003AA14B /* SceneDelegate.swift */,
 				6C4EBDED28E07F5000EED3F7 /* HapticsManager.swift */,
 				6C7CF89B27837749003AA14B /* ViewController.swift */,
+				6C56F933292A37610078DE8F /* ParticleScene.swift */,
 				6C0921C928BA431A001639D8 /* Utils */,
 				6CD4A2B6291720890025AA21 /* Extension */,
 				6C7CF89D27837749003AA14B /* Main.storyboard */,
@@ -190,8 +203,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C7CF8A12783774B003AA14B /* Assets.xcassets in Resources */,
+				6C0DBFC729207510009F99F2 /* 18969.otf in Resources */,
+				6C56F93A292A38220078DE8F /* SparksParticle.sks in Resources */,
+				6C56F938292A37CB0078DE8F /* Assets.xcassets in Resources */,
 				6C31534F28C3CAF1006B9F2B /* 10943.otf in Resources */,
 				6CA09E6C28E8A7F60098F882 /* audios.json in Resources */,
+				6C0DBFC529207503009F99F2 /* 17465.otf in Resources */,
+				6C0DBFC62920750C009F99F2 /* 18036.otf in Resources */,
+				6C0DBFC829207513009F99F2 /* 19514.otf in Resources */,
 				6C7CF89F27837749003AA14B /* Main.storyboard in Resources */,
 				6C855D9228A7A4D300935002 /* Audio.bundle in Resources */,
 			);
@@ -204,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C56F934292A37610078DE8F /* ParticleScene.swift in Sources */,
 				6CFC2B6B28D5EADB00C79CF4 /* LaunchScreen.swift in Sources */,
 				6C7CF89C27837749003AA14B /* ViewController.swift in Sources */,
 				6C4EBDEE28E07F5000EED3F7 /* HapticsManager.swift in Sources */,

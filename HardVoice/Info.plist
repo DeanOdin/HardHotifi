@@ -9,10 +9,6 @@
 		<string>19514.otf</string>
 		<string>17465.otf</string>
 	</array>
-	<key>UIFileSharingEnabled</key>
-	<true/>
-	<key>LSSupportsOpeningDocumentsInPlace</key>
-	<true/>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -32,5 +28,7 @@
 			</array>
 		</dict>
 	</dict>
+	<key>UIFileSharingEnabled</key>
+	<true/>
 </dict>
 </plist>

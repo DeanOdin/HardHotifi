@@ -228,5 +228,399 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "371C3ABB-DA93-44E7-BF57-98E94A1FF6AD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HardVoice/ParticleScene.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "setupParticleEmitter()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "98075566-4A54-4078-BD7A-CA76E82E0B26"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HardVoice/MyTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "MyTableViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "98075566-4A54-4078-BD7A-CA76E82E0B26 - e7b74a60509bc712"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HardVoice.MyTableViewController.audioList.getter : Swift.Array&lt;HardVoice.AudioFile&gt;"
+                  moduleName = "HardVoice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dinkandratenkov/Desktop/HardProject/HardVoice/HardVoice/MyTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "90">
+               </Location>
+               <Location
+                  uuid = "98075566-4A54-4078-BD7A-CA76E82E0B26 - 40989c3e1d89e76e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HardVoice.MyTableViewController.audioList.setter : Swift.Array&lt;HardVoice.AudioFile&gt;"
+                  moduleName = "HardVoice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dinkandratenkov/Desktop/HardProject/HardVoice/HardVoice/MyTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "98075566-4A54-4078-BD7A-CA76E82E0B26 - 1d6aecc35d6aaf11"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HardVoice.MyTableViewController.audioList.modify : Swift.Array&lt;HardVoice.AudioFile&gt;"
+                  moduleName = "HardVoice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dinkandratenkov/Desktop/HardProject/HardVoice/HardVoice/MyTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "98075566-4A54-4078-BD7A-CA76E82E0B26 - 7d9f0f841a3c424c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HardVoice.MyTableViewController.audioList.modify : Swift.Array&lt;HardVoice.AudioFile&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "HardVoice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dinkandratenkov/Desktop/HardProject/HardVoice/HardVoice/MyTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  uuid = "98075566-4A54-4078-BD7A-CA76E82E0B26 - 35c5318cb8fc6fe5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HardVoice.MyTableViewController.init(style: __C.UITableViewStyle) -&gt; HardVoice.MyTableViewController"
+                  moduleName = "HardVoice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dinkandratenkov/Desktop/HardProject/HardVoice/HardVoice/MyTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "94">
+               </Location>
+               <Location
+                  uuid = "98075566-4A54-4078-BD7A-CA76E82E0B26 - f31e6fe8352e0f7f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HardVoice.MyTableViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; HardVoice.MyTableViewController"
+                  moduleName = "HardVoice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dinkandratenkov/Desktop/HardProject/HardVoice/HardVoice/MyTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "150">
+               </Location>
+               <Location
+                  uuid = "98075566-4A54-4078-BD7A-CA76E82E0B26 - edba5b104f1b3a74"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HardVoice.MyTableViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;HardVoice.MyTableViewController&gt;"
+                  moduleName = "HardVoice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dinkandratenkov/Desktop/HardProject/HardVoice/HardVoice/MyTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "107">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B5DD9210-EE48-4854-91E4-DA2253D53A33"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HardVoice/MyTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "MyTableViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "07ADB659-52BC-4BF7-A977-83063387322F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ViewControllerNew.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "07ADB659-52BC-4BF7-A977-83063387322F - 6361c6d0603f75cb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HardVoice.ViewControllerNew.viewDidLoad() -&gt; ()"
+                  moduleName = "HardVoice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dinkandratenkov/Desktop/HardProject/HardVoice/ViewControllerNew.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "07ADB659-52BC-4BF7-A977-83063387322F - 6361c6d0603f75cb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HardVoice.ViewControllerNew.viewDidLoad() -&gt; ()"
+                  moduleName = "HardVoice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dinkandratenkov/Desktop/HardProject/HardVoice/ViewControllerNew.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "204">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F5AEE87A-651D-40D8-B67A-4D24E16F6D5D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HardVoice/MyTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "previewImageSet()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A37D705E-07AF-4E88-82F3-C81ECEB5D007"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ViewControllerNew.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "actionLongPress(Recognizer:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A37D705E-07AF-4E88-82F3-C81ECEB5D007 - 481ef5a1c643381e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HardVoice.ViewControllerNew.actionLongPress(Recognizer: __C.UILongPressGestureRecognizer) -&gt; ()"
+                  moduleName = "HardVoice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dinkandratenkov/Desktop/HardProject/HardVoice/ViewControllerNew.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "348">
+               </Location>
+               <Location
+                  uuid = "A37D705E-07AF-4E88-82F3-C81ECEB5D007 - 481ef5a1c643381e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HardVoice.ViewControllerNew.actionLongPress(Recognizer: __C.UILongPressGestureRecognizer) -&gt; ()"
+                  moduleName = "HardVoice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dinkandratenkov/Desktop/HardProject/HardVoice/ViewControllerNew.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "412">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A34AE40A-C116-4032-9180-F5B5BA0D645C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ViewControllerNew.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "fetchData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DD2B16F0-5007-44CB-A29C-8CC353BFEC5E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ViewControllerNew.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "actionLongPress(Recognizer:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DD2B16F0-5007-44CB-A29C-8CC353BFEC5E - 481ef5a1c643387f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HardVoice.ViewControllerNew.actionLongPress(Recognizer: __C.UILongPressGestureRecognizer) -&gt; ()"
+                  moduleName = "HardVoice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dinkandratenkov/Desktop/HardProject/HardVoice/ViewControllerNew.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "114"
+                  endingLineNumber = "114"
+                  offsetFromSymbolStart = "528">
+               </Location>
+               <Location
+                  uuid = "DD2B16F0-5007-44CB-A29C-8CC353BFEC5E - 481ef5a1c643387f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HardVoice.ViewControllerNew.actionLongPress(Recognizer: __C.UILongPressGestureRecognizer) -&gt; ()"
+                  moduleName = "HardVoice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dinkandratenkov/Desktop/HardProject/HardVoice/ViewControllerNew.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "114"
+                  endingLineNumber = "114"
+                  offsetFromSymbolStart = "836">
+               </Location>
+               <Location
+                  uuid = "DD2B16F0-5007-44CB-A29C-8CC353BFEC5E - 481ef5a1c643387f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HardVoice.ViewControllerNew.actionLongPress(Recognizer: __C.UILongPressGestureRecognizer) -&gt; ()"
+                  moduleName = "HardVoice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dinkandratenkov/Desktop/HardProject/HardVoice/ViewControllerNew.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "114"
+                  endingLineNumber = "114"
+                  offsetFromSymbolStart = "3284">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "572AD6A7-D882-4E03-A751-01ADAE7ECFB9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ViewControllerNew.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "actionLongPress(Recognizer:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "572AD6A7-D882-4E03-A751-01ADAE7ECFB9 - 481ef5a1c643381e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HardVoice.ViewControllerNew.actionLongPress(Recognizer: __C.UILongPressGestureRecognizer) -&gt; ()"
+                  moduleName = "HardVoice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dinkandratenkov/Desktop/HardProject/HardVoice/ViewControllerNew.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "348">
+               </Location>
+               <Location
+                  uuid = "572AD6A7-D882-4E03-A751-01ADAE7ECFB9 - 481ef5a1c643381e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HardVoice.ViewControllerNew.actionLongPress(Recognizer: __C.UILongPressGestureRecognizer) -&gt; ()"
+                  moduleName = "HardVoice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dinkandratenkov/Desktop/HardProject/HardVoice/ViewControllerNew.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "412">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
